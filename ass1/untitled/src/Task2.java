@@ -8,8 +8,8 @@ public class Task2 {
      * @param i - to navigate in recursion
      * @param sum - for sum
      * @param ans - for answer
-     * */
-    public static int favg(int[] arr, int i){//function for task1
+     */
+    public static int favg(int[] arr, int i){//function for task2
         if(i == arr.length - 1){//checking if we are on the last element of array
             return arr[i];// returning last value
         }
