@@ -8,6 +8,7 @@ public class Main {
             case 1:
                 Task1 task = new Task1();
                 Task1.task1();
+                break;
         }
     }
 }
