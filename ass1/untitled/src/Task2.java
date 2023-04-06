@@ -7,7 +7,7 @@ public class Task2 {
      * @param sc - scanner for taking input from console
      * @param i - to navigate in recursion
      * @param sum - for sum
-     * @param ans
+     * @param ans - for answer
      * */
     public static int favg(int[] arr, int i){//function for task1
         if(i == arr.length - 1){//checking if we are on the last element of array
