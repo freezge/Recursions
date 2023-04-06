@@ -15,7 +15,7 @@ public class Task2 {
         }
         else{
             int sum = favg(arr, i + 1);//recursion
-            return sum + arr[i];//
+            return sum + arr[i];// returning sum of elements
         }
     }
     public static void task2() {
