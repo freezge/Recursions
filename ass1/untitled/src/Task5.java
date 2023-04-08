@@ -6,13 +6,16 @@ public class Task5 {
      * @param sc - scanner for taking input from console
      * @param i - counter
      * @param ans - for answer
+     * @param f - limit for recursion
+     * @param a - predposledniy number
+     * @param b - last number
      */
-    public static int ffact(int a, int i, int f){//function for task3
-        if(a < i){
-            return f;
+    public static int ffibo(int a, int b, int i, int f){//function for task5
+        if(i == f){//end of recursion
+            return b;
         }
         else{
-            return ffact(a, i + 1, f * i);
+            return ffibo(b, a + b, i + 1, f);//recursion
         }
 
     }
@@ -20,12 +23,6 @@ public class Task5 {
         Scanner sc = new Scanner(System.in);//to read from console
         System.out.println("Please enter digit");
         int n = sc.nextInt();//number
-        if (n == 0) { // checking if 0 is written
-            System.out.println("1");//output number
-        }
-        else {
-            int ans = ffact(n, 2, 1);//calling for function to find minimum
-            System.out.println(ans);
-        }
+        System.out.println(ffibo(0, 1, 1, n));//output answer
     }
 }

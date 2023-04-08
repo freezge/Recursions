@@ -8,7 +8,7 @@ public class Task4 {
      * @param f - to save  factorial
      * @param ans - for answer
      */
-    public static int ffact(int a, int i, int f){//function for task3
+    public static int ffact(int a, int i, int f){//function for task4
         if(a < i){// checker
             return f;//end pf recursion
         }
