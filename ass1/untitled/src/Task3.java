@@ -7,12 +7,12 @@ public class Task3 {
      * @param i - counter
      * @param ans - for answer
      */
-    public static boolean f(int a, int i){//function for task3
+    public static boolean fprime(int a, int i){//function for task3
         if(i <= a/2) {//to minimize amount of numbers
             if (a % i == 0) {//checking if it is divisible by the counter
                 return false;
             } else {
-                return f(a, i + 1);//recursion
+                return fprime(a, i + 1);//recursion
             }
         }
         return true;//returning true otherwise
@@ -27,7 +27,7 @@ public class Task3 {
             System.out.println("Composite");//output number
         }
         else {
-            boolean ans = f(n, 2);//calling for function to find minimum
+            boolean ans = fprime(n, 2);//calling for function to find minimum
             if(ans){ //checking the result
                 System.out.println("Prime");//output answer
             }

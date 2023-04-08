@@ -14,6 +14,9 @@ public class Main {
             case 3:
                 Task3.task3();
                 break;
+            case 4:
+                Task4.task4();
+                break;
             default:
                 System.out.println("Wrong number");
                 break;
