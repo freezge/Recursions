@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Task7 {
     /*
-     * finding min value through recursion
+     * finding reverse of an array via recursion
      * @param arr - array
      * @param n - length of an array
      * @param sc - scanner for taking input from console
@@ -11,7 +11,7 @@ public class Task7 {
      */
 
 
-    public static void freverse(int[] arr, int i){//function for task7
+    private static void freverse(int[] arr, int i){//function for task7
         if(i == 0){//checking if we are on the first element of array
             System.out.print(arr[i]);//print first elem of arr
         }

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Task5 {
     /*
-     * is number prime or not via recursion
+     * fibonacci via recursion
      * @param n - number
      * @param sc - scanner for taking input from console
      * @param i - counter
@@ -10,7 +10,7 @@ public class Task5 {
      * @param a - predposledniy number
      * @param b - last number
      */
-    public static int ffibo(int a, int b, int i, int f){//function for task5
+    private static int ffibo(int a, int b, int i, int f){//function for task5
         if(i == f){//end of recursion
             return b;
         }

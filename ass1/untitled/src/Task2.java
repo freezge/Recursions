@@ -9,7 +9,7 @@ public class Task2 {
      * @param sum - for sum
      * @param ans - for answer
      */
-    public static int favg(int[] arr, int i){//function for task2
+    private static int favg(int[] arr, int i){//function for task2
         if(i == arr.length - 1){//checking if we are on the last element of array
             return arr[i];// returning last value
         }

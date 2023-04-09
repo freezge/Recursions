@@ -7,7 +7,7 @@ public class Task3 {
      * @param i - counter
      * @param ans - for answer
      */
-    public static boolean fprime(int a, int i){//function for task3
+    private static boolean fprime(int a, int i){//function for task3
         if(i <= a/2) {//to minimize amount of numbers
             if (a % i == 0) {//checking if it is divisible by the counter
                 return false;

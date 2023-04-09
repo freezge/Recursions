@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 public class Task6 {
     /*
-     * is number prime or not via recursion
+     * power of a via recursion
      * @param a - first number
      * @param sc - scanner for taking input from console
      * @param i - counter
      * @param b - second number
      */
-    public static int fpower(int a, int b, int i){//function for task5
+    private static int fpower(int a, int b, int i){//function for task5
         if(i == b){//end of recursion
             return a;
         }

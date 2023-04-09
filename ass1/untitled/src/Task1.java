@@ -9,7 +9,7 @@ public class Task1 {
      * @param i - to navigate in recursion
      * @param min - for minimum
      */
-    public static int fmin(int[] arr, int i){//function for task1
+    private static int fmin(int[] arr, int i){//function for task1
         if(i == arr.length - 1){//checking if we are on the last element of array
             return arr[i];// returning last value
         }

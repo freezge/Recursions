@@ -1,14 +1,14 @@
 import java.util.Scanner;
 public class Task4 {
     /*
-     * is number prime or not via recursion
+     * factorial via recursion
      * @param n - number
      * @param sc - scanner for taking input from console
      * @param i - counter
      * @param f - to save  factorial
      * @param ans - for answer
      */
-    public static int ffact(int a, int i, int f){//function for task4
+    private static int ffact(int a, int i, int f){//function for task4
         if(a < i){// checker
             return f;//end pf recursion
         }
