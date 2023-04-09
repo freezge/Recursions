@@ -19,9 +19,14 @@ public class Task6 {
     }
     public static void task6() {
         Scanner sc = new Scanner(System.in);//to read from console
-        System.out.println("Please 2 digits");
+        System.out.println("Please enter 2 digits");
         int a = sc.nextInt();//first number
         int b = sc.nextInt();//seconds number
+        if(b <= 0){
+            System.out.println(2);
+        }
+        else{
         System.out.println(fpower(a, b, 1));//output answer
+        }
     }
 }
