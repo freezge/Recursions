@@ -6,7 +6,7 @@ public class Task8 {
      * @param i - index
      * @param s - string(line)
      */
-    private static boolean fisdigit(String s, int i) {//function for task7
+    private static boolean fisdigit(String s, int i) {//function for task8
         if (Character.isDigit(s.charAt(i))) {
             if (i == s.length() - 1) {
                 return true;
