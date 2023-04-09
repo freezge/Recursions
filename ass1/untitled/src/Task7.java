@@ -7,7 +7,7 @@ public class Task7 {
      * @param sc - scanner for taking input from console
      * @param i - index
      * @param arr - for array
-     * i did not understand the task so i did what i thought
+     * I did not understand the task, so I did what I thought
      */
 
 
@@ -24,7 +24,7 @@ public class Task7 {
         Scanner sc = new Scanner(System.in);//to read from console
         System.out.println("Please enter length of an array");
         int n = sc.nextInt();//length of an array
-        System.out.println("please enter array");
+        System.out.println("please enter an array");
         int[] arr = new int[n];//array from condition
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();//reading array
