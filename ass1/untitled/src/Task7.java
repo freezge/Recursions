@@ -20,13 +20,13 @@ public class Task7 {
 //        }
 //    }
     private static void freverse(Scanner sc, int n, int i){//function for task7
-        if (i == n){
-            System.out.print(sc.nextInt() + " ");
+        if (i == n){// end of recursion
+            System.out.print(sc.nextInt() + " ");// print the last elem from those which where inputted
         }
         else {
-            int a = sc.nextInt();
-            freverse(sc, n, i + 1);
-            System.out.print(a + " ");
+            int a = sc.nextInt();// next digit
+            freverse(sc, n, i + 1);// recursion
+            System.out.print(a + " ");// output
         }
     }
     public static void task7() {
