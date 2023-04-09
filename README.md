@@ -85,13 +85,14 @@ private static int fpower(int a, int b, int i){//function for task5
 You are given a number “n” and an array of “n” elements, write the program that returns given array in reverse order without using array data structure.
 ### Recursion for task 7
 ```
-private static void freverse(int[] arr, int i){//function for task7
-    if(i == 0){//checking if we are on the first element of array
-        System.out.print(arr[i]);//print first elem of arr
+private static void freverse(Scanner sc, int n, int i){//function for task7
+    if (i == n){// end of recursion
+        System.out.print(sc.nextInt() + " ");// print the last elem from those which where inputted
     }
-    else{
-        System.out.print(arr[i] + " ");//printing elems
-        freverse(arr, i - 1);//recursion
+    else {
+        int a = sc.nextInt();// next digit
+        freverse(sc, n, i + 1);// recursion
+        System.out.print(a + " ");// output
     }
 }
 ```
