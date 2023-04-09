@@ -1,10 +1,13 @@
 import java.util.Scanner;
 public class Task9 {
     /*
-     * is digits or not via recursion
+     * binomial coefficient via recursion
      * @param sc - scanner for taking input from console
      * @param i - index
-     * @param s - string(line)
+     * @param f - factorial
+     * @param a - number to find factorial
+     * @param n - for n in binomial coefficient
+     * @param k - for k in binomial coefficient
      */
     private static int ffact(int a, int i, int f){//function for task9(from task4)
         if(a < i){// checker
