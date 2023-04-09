@@ -2,7 +2,7 @@
 ### Task 1
 You are given a number “n” and an array of “n” elements, write the function that returns minimum of them. 
 ### Recursion for task 1
-'''
+"""
 private static int fmin(int[] arr, int i){//function for task1
     if(i == arr.length - 1){//checking if we are on the last element of array
         return arr[i];// returning last value
@@ -12,7 +12,7 @@ private static int fmin(int[] arr, int i){//function for task1
         return Math.min(min, arr[i+1]);//checking min between 2 elems
     }
 }
-'''
+"""
 ### Task 2
 You are given a number “n” and an array of “n” elements, write the function that returns average of them. 
 ### Recursion for task 2
