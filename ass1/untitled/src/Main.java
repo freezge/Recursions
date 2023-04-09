@@ -20,6 +20,8 @@ public class Main {
             case 5:
                 Task5.task5();
                 break;
+            case 6:
+                Task6.task6();
             default:
                 System.out.println("Wrong number");
                 break;
