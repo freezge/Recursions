@@ -1,4 +1,4 @@
-# ADS
+# ADS Assignment 1
 ### Task 1
 You are given a number “n” and an array of “n” elements, write the function that returns minimum of them. 
 ### Recursion for task 1
