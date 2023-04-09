@@ -1,8 +1,7 @@
 import java.util.Scanner;
 public class Task7 {
     /*
-     * finding reverse of an array via recursion
-     * @param arr - array
+     * finding reverse via recursion
      * @param n - length of an array
      * @param sc - scanner for taking input from console
      * @param i - index
@@ -11,24 +10,30 @@ public class Task7 {
      */
 
 
-    private static void freverse(int[] arr, int i){//function for task7
-        if(i == 0){//checking if we are on the first element of array
-            System.out.print(arr[i]);//print first elem of arr
+//    private static void freverse(int[] arr, int i){//function for task7
+//        if(i == 0){//checking if we are on the first element of array
+//            System.out.print(arr[i]);//print first elem of arr
+//        }
+//        else{
+//            System.out.print(arr[i] + " ");//printing elems
+//            freverse(arr, i - 1);//recursion
+//        }
+//    }
+    private static void freverse(Scanner sc, int n, int i){//function for task7
+        if (i == n){
+            System.out.print(sc.nextInt() + " ");
         }
-        else{
-            System.out.print(arr[i] + " ");//printing elems
-            freverse(arr, i - 1);//recursion
+        else {
+            int a = sc.nextInt();
+            freverse(sc, n, i + 1);
+            System.out.print(a + " ");
         }
     }
     public static void task7() {
         Scanner sc = new Scanner(System.in);//to read from console
         System.out.println("Please enter length of an array");
         int n = sc.nextInt();//length of an array
-        System.out.println("please enter an array");
-        int[] arr = new int[n];//array from condition
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();//reading array
-        }
-        freverse(arr, n - 1);
+        System.out.println("Enter arr");
+        freverse(sc, n, 1);
     }
 }
