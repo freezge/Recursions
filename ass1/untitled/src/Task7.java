@@ -3,22 +3,23 @@ public class Task7 {
     /*
      * finding min value through recursion
      * @param arr - array
-     * @param n - lenght
+     * @param n - length of an array
      * @param sc - scanner for taking input from console
-     * @param i - to navigate in recursion
-     * @param min - for minimum
+     * @param i - index
+     * @param arr - for array
+     * i did not understand the task so i did what i thought
      */
 
 
-//    public static void freverse(int[] arr, int i){//function for task7
-//        if(i == 0){//checking if we are on the last element of array
-//            System.out.print(arr[i]);
-//        }
-//        else{
-//            System.out.print(arr[i] + " ");
-//            freverse(arr, i - 1);
-//        }
-//    }
+    public static void freverse(int[] arr, int i){//function for task7
+        if(i == 0){//checking if we are on the first element of array
+            System.out.print(arr[i]);//print first elem of arr
+        }
+        else{
+            System.out.print(arr[i] + " ");//printing elems
+            freverse(arr, i - 1);//recursion
+        }
+    }
     public static void task7() {
         Scanner sc = new Scanner(System.in);//to read from console
         System.out.println("Please enter length of an array");
